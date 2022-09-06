@@ -21,10 +21,10 @@ public class EventServer extends Thread {
                             rand.nextDouble() * 100,
                             rand.nextInt(1, 100)
                     );
-                    out.println(event);
+                    // out.println(event);
+                    System.out.println(event);
                     Thread.sleep(250);
                 }
-                out.println("done");
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
