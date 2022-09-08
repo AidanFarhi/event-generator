@@ -1,7 +1,7 @@
 # Event Generator
 
-This app starts a server listening on port 9090. Once a client connects, events will
-start streaming to it.
+This app starts a server listening on port 9090. Once a client connects, newline
+separated events will start streaming to it.
 
 Each event will look like this:
 

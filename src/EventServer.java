@@ -15,13 +15,7 @@ public class EventServer extends Thread {
                 rand.nextDouble() * 100,
                 rand.nextInt(1, 100)
         );
-        // this is the format for server-sent events
-        return "HTTP/1.1 200 OK\n" +
-                "Content-Type: text/event-stream\n" +
-                "Cache-Control: no-cache\n" +
-                "Connection: keep-alive\n" +
-                "Charset: UTF-8\n" +
-                "data: " + event + "\n\n";
+        return event + "\n";
     }
 
     public void run() {
